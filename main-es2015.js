@@ -896,21 +896,13 @@ let HomeComponent = class HomeComponent {
     }
     onExpand2() {
         this.opened = 2;
-        let card = document.getElementById('image');
-        let height = card.scrollHeight;
-        if (height < 400) {
-            height += ((600 - height) / 10);
-        }
-        this.margin = (height * 14 + 1050) + "px";
+        let height = window.innerWidth * 3 + 2800;
+        this.margin = height + "px";
     }
     onExpand3() {
         this.opened = 3;
-        let card = document.getElementById('image');
-        let height = card.scrollHeight;
-        if (height < 400) {
-            height += ((400 - height) / 4);
-        }
-        this.margin = (height * 10 + 300) + "px";
+        let height = window.innerWidth * 2 + 1800;
+        this.margin = height + "px";
     }
     onClosed1() {
         if (this.opened == 1) {

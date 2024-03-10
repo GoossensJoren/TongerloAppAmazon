@@ -1721,27 +1721,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "onExpand2",
         value: function onExpand2() {
           this.opened = 2;
-          var card = document.getElementById('image');
-          var height = card.scrollHeight;
-
-          if (height < 400) {
-            height += (600 - height) / 10;
-          }
-
-          this.margin = height * 14 + 1050 + "px";
+          var height = window.innerWidth * 3 + 2800;
+          this.margin = height + "px";
         }
       }, {
         key: "onExpand3",
         value: function onExpand3() {
           this.opened = 3;
-          var card = document.getElementById('image');
-          var height = card.scrollHeight;
-
-          if (height < 400) {
-            height += (400 - height) / 4;
-          }
-
-          this.margin = height * 10 + 300 + "px";
+          var height = window.innerWidth * 2 + 1800;
+          this.margin = height + "px";
         }
       }, {
         key: "onClosed1",
